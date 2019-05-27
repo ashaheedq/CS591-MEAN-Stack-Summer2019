@@ -4,13 +4,17 @@
 // and return a function to implement the input operator that returns the result
 const evaluateExpression = str => {
     let operator = str.replace(/[0-9]/g, "");
-    if (operator == '+') {
+    switch(operator) {
+        case "+":
         return expression => parseInt(expression[0]) + parseInt(expression[2]);
-    } else if (operator == '*') {
+    
+        case "*":
         return expression => parseInt(expression[0]) * parseInt(expression[2]);
-    } else if (operator == '-') {
+    
+        case "-":
         return expression => parseInt(expression[0]) - parseInt(expression[2]);
-    } else {
+        
+        case "/":
         return expression => parseInt(expression[0]) / parseInt(expression[2]);
     }
 }
