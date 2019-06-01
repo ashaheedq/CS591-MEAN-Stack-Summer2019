@@ -1,3 +1,6 @@
+#ignore folder PS1
+PS1/ 
+
 # Logs
 logs
 *.log
