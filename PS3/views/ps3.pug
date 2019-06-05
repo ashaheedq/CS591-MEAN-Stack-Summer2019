@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= 'PS3'
+    if length
+        h1 This is a POST request:
+        p The passed in string is "#{string}" and has a length of #{length}
+    else
+        h1 This is a GET request: 
+        p The passed in string is "#{string}"
