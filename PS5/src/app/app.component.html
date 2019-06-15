@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }} page
+  </h1>
+</div>
+
+<div>
+
+  <ul>
+    <li *ngFor="let city of data">
+      The distance from {{city.destination}} to {{city.origin}} is {{city.distance}} km <br>
+      and is {{city.duration}} driving
+    </li>
+  </ul>
+
+</div>
