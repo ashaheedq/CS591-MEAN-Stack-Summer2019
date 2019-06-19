@@ -1,3 +1,11 @@
+#config
+config.json
+
+.DS_Store
+
+# .idea
+.idea
+
 # Logs
 logs
 *.log
@@ -59,3 +67,4 @@ typings/
 
 # next.js build output
 .next
+PS6/src/app/config.ts
